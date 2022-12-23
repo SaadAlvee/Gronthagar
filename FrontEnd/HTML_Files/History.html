@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS_Files/history.css">
+</head>
+<body style="background-color: #a8a4fa;">
+
+    <div class="header">
+
+        <div class="left-sidebar"></div>
+
+        <span>
+            <a href="" class="logo">History</a>
+        </span>
+
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="AdminPage.html" ><u>Return to Dashboard</u></a></li>
+                    <li><a href="" ><u>Logout</u></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <span class="left-col">
+            <img src="../../Resources/Images/logo.png">
+        </span>
+
+        <div id="book_history" class="center">
+            <div>
+                <h3>History of Borrowed Books:</h3> <br>
+            </div>
+            <input type="text" class="search">
+            <br>
+            <div style="padding-top: 10px;">
+                <button class="sort" data-sort="title">Sort by Title</button>
+                <button class="sort" data-sort="author">Sort by Author</button>
+                <button class="sort" data-sort="issue_date">Sort by Issue Date</button>
+                <button class="sort" data-sort="return_date">Sort by Return Date</button>
+            </div>
+            <ul class="list">
+                <li>
+                    <span class="title">Wolf's Totem</span>
+                    <span class="author">Jiang Rong</span>
+                    <span class="issue_date">22-12-2021</span>
+                    <span class="return_date">28-12-2021</span>
+                </li>
+                <li>
+                    <span class="title">Doom's Day Conspiracy</span>
+                    <span class="author">Sidney Sheldon</span>
+                    <span class="issue_date">02-01-2022</span>
+                    <span class="return_date">09-01-2022</span>
+                </li>
+            </ul>
+            <!--<div class="extra">
+                <span class="title">
+                    <input type="text" id="title-field" placeholder="Title.." />
+                </span>
+                <span class="author">
+                    <input type="text" id="author-field" placeholder="Author.." />
+                </span>
+                <span class="issue_date">
+                    <input type="text" id="issue_date-field" placeholder="Issue Date.." />
+                </span>
+                <span class="return_date">
+                    <input type="text" id="return_date-field" placeholder="Return_Date.." />
+                </span>
+                <span class="add">
+                    <button id="add-btn">Add</button>
+                </span>
+            </div>-->
+        </div>
+    </div>
+    <script src="../JS_Files/history.js"></script>
+</body>
+</html>
